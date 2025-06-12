@@ -1,0 +1,56 @@
+:root {
+  --cor-primaria: #ff69b4; /* Rosa vibrante */
+  --cor-secundaria: #ff85c1; /* Rosa claro */
+  --cor-terciaria: #6a5acd; /* Roxo lavanda */
+  --cor-fundo-form: #ffffff;
+  --cor-texto: #4b0082; /* Roxo escuro */
+  --cor-destaque: #ff69b4; /* Adicionei uma cor para destaque */
+  --radius: 14px;
+  --sombra: 0 4px 15px rgba(255, 105, 180, 0.5);
+  --transition: all 0.3s ease;
+}
+
+/* Formulário */
+form {
+  background: var(--cor-fundo-form);
+  border-radius: var(--radius);
+  padding: 40px 45px 60px 45px; /* espaço extra embaixo para botões */
+  box-shadow: var(--sombra);
+  width: 400px;
+  border: 3px solid var(--cor-primaria); /* Corrigi a borda */
+}
+
+/* Responsividade */
+@media (max-width: 720px) {
+  .container-tabela {
+    padding: 15px 20px;
+  }
+  thead {
+    display: none;
+  }
+  tbody tr {
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border-radius: var(--radius); /* Corrigi a variável */
+    background: var(--cor-secundaria);
+    padding: 15px;
+  }
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: none;
+    color: var(--cor-texto);
+  }
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    flex-basis: 50%;
+    color: var(--cor-destaque);
+  }
+  .btn-acao {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

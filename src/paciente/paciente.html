@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+    <link rel="stylesheet" href="paciente.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+    <p id="teste"></p>
+    <button id="btn-limpar">
+        <i data-lucide="circle-plus"></i>
+    </button>
+    <table id="paciente">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Id</th>
+                <th>Data de Nascimento</th>
+            </tr>
+        </thead>
+        <tbody id="pacienteTableDados">
+        </tbody>
+    </table>
+
+
+    <!--modal-->
+    <div id="modal">
+        <h3>Edite os dados do Paciente:</h3>
+
+        <label>ID: <input type="text" id= "paciente-id" readonly />
+        </label>
+        <br>
+        <label>Nome: <input type="text" id="paciente-nome">
+        </label>
+        <br>
+        <label>
+            Data de Nascimento: <input type="text" id="paciente-nascimento">
+        </label>
+            <br>
+            <button id="btn-salvar">
+                <i data-lucide="save"></i>
+            </button>
+            <button id="btn-excluir">
+                <i data-lucide="trash-2"></i>
+            </button>
+    </div>
+
+
+    <script src="paciente.js"></script>
+</body>
+
+</html>
