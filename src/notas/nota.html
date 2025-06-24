@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='nota.css' type="text/css" rel="stylesheet">
+    <title>Lista de Notas</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <table id="notaTable">
+        <thead>
+            <tr>
+                <button id='btn-incluir'>
+                    <icon id="iIncluir"></icon>
+                </button>
+                <button id="btn-limparFiltro">
+                    <icon id="IlimparFiltro"></icon>
+                </button>
+                <select id= "filtro" name="Filtro">  
+                          
+                </select>
+                <button id="btnFiltro">
+                        <icon id='IFiltrar'></icon>
+                    </button>  
+                <i id="iAvaliacao"></i>    
+                <th></th>
+                <th>Aluno</th>
+                <th>Matéria</th>
+                <th>Professor</th>
+                <th>Avaliação</th>
+            </tr>
+        </thead>
+        <tbody id="notasTableDados">
+        </tbody>
+    </table>
+
+
+    <!--modal-->
+    <div id="modal">
+        <h3>Edite os dados do Nota:</h3>
+        <label>ID: <input type="text" id="nota-id" readonly />
+        </label>
+        <br>
+        <label for="aluno-nome">Aluno:</label>
+        <select id="aluno-nome" name="aluno">
+            
+        </select>
+        <br>
+        <label for="professor-nome">Professor:</label>
+        <select id="professor-nome" name="professor">
+    
+        </select>
+        <br>
+        <label for="materia-nome">Matéria:</label>
+        <select id="materia-nome" name="materia">
+           
+        </select>
+        <br>
+        <label for="avaliacao">Avaliação:</label>
+        <select id="avaliacao" name="avaliacao">
+            <option value="Aprovado">Aprovado</option>
+            <option value="Reprovado">Reprovado</option>
+        </select>
+        <br>
+        <button id="btn-salvar">
+            <icon id='iSalvar'></icon>
+        </button>
+        <button id="btn-excluir">
+            <icon id='iExcluir'></icon>
+        </button>
+    </div>
+
+
+    <script src="nota.js"></script>
+</body>
+
+</html>

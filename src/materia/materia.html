@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ='materia.css' type="text/css" rel = "stylesheet">
+    <title>Lista de Materias</title>
+
+     <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+    
+    <table id="materiaTable">
+        <thead>
+            <tr>
+                
+                <button id='btn-incluir'>
+                    <icon id="iIncluir"></icon>
+                </button>
+                <th>Nome</th>
+                <th>Descrição</th> 
+                <th>Curso</th>             
+            </tr>
+        </thead>
+        <tbody id="materiasTableDados">    
+        </tbody>
+    </table>
+
+
+    <!--modal-->
+    <div id="modal" >
+        <h3>Edite os dados do Materia:</h3>
+        <label>ID: <input type="text" id="materia-id" readonly /> 
+        </label>
+        <br>
+        <label>Nome: <input type="text" id="materia-nome">       
+        </label>
+         <br>
+        <label>Descrição: <input type="text" id="materia-descricao">
+        </label>   
+        <br>
+        <label>Curso</label> 
+        <select id="materia-curso-id" name="Selecione o Curso"></select>
+        <br>
+        <button id="btn-salvar">
+            <icon id ='iSalvar'></icon>
+        </button>
+        <button id="btn-excluir">
+            <icon id ='iExcluir'></icon>
+        </button>
+    </div>
+
+
+    <script src="materia.js"></script>
+</body>
+</html>

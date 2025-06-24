@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ='curso.css' type="text/css" rel = "stylesheet">
+    <title>Lista de Cursos</title>
+
+     <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+    
+    <table id="cursoTable">
+        <thead>
+            <tr>
+                
+                <button id='btn-incluir'>
+                    <icon id="iIncluir"></icon>
+                </button>
+                <th>Nome</th>
+                <th>Descrição</th>              
+            </tr>
+        </thead>
+        <tbody id="cursosTableDados">    
+        </tbody>
+    </table>
+
+
+    <!--modal-->
+    <div id="modal" >
+        <h3>Edite os dados do curso:</h3>
+        <label>ID: <input type="text" id="curso-id" readonly /> 
+        </label>
+        <br>
+        <label>Nome: <input type="text" id="curso-nome">       
+        </label>
+         <br>
+        <labe>Descrição: <input type="text" id="curso-descricao">
+        </label>
+        <br>
+        <button id="btn-salvar">
+            <icon id ='iSalvar'></icon>
+        </button>
+        <button id="btn-excluir">
+            <icon id ='iExcluir'></icon>
+        </button>
+    </div>
+
+
+    <script src="curso.js"></script>
+</body>
+</html>

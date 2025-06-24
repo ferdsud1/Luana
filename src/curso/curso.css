@@ -1,0 +1,144 @@
+:root {
+    --bg-primary: #1d2466;
+    --bg-secondary: #16142c;
+    --bg-tertiary: #05042b;
+    --text-primary: #e0e0e0;
+    --text-secondary: #ffffff;
+    --accent-color: #f8a546;
+    --accent-hover: #ff8800;
+    --danger-color: #e74c3c;
+    --danger-hover: #c0392b;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+    --border-color: #3a3a5c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    background-color: var(--bg-secondary);
+}
+
+tr:hover td {
+    background-color: var(--bg-tertiary);
+    transition: 0.2s ease;
+    transform: scale(1.02);
+}
+
+/* Botões */
+button {
+    background-color: var(--accent-color);
+    color: var(--bg-secondary);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-incluir {
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+/* Botão excluir */
+#btn-excluir {
+    background-color: var(--danger-color);
+    color: var(--text-secondary);
+    margin-left: 10px;
+}
+
+#btn-excluir:hover {
+    background-color: var(--danger-hover);
+}
+
+/* Modal */
+#modal {
+    background-color: var(--bg-secondary);
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    max-width: 500px;
+    box-shadow: 0 0 10px #00000088;
+}
+
+#modal h3 {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2a2a4c;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Input de ID readonly */
+#curso-id {
+    background-color: #333;
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+/* Ícones */
+i, icon {
+    vertical-align: middle;
+}
+
